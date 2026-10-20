@@ -1,6 +1,6 @@
 # Delivery modes
 
-Common 0.2.0 offers a neutral base and the optional `delivery.vivid` tag. Vivid writing
+Common 0.3.0 offers a neutral base and the optional `delivery.vivid` tag. Vivid writing
 can open with a concrete object or puzzle, connect an explanation, vary pace, and use
 an apt fresh analogy or dry joke. For fiction it anchors action/material detail and
 keeps character voices distinct. It does not impose a signature phrase or punchline.
@@ -9,7 +9,7 @@ No named-author imitation or third-party text is shipped in this pack.
 Choose a platform independently:
 
 ```text
-qg pack build --pack . --language ru --register essay --tag delivery.vivid --tag social.telegram --public --out out/telegram
+qg pack build --pack . --language ru --register essay --tag delivery.vivid --tag examples.common --tag social.telegram --public --out out/telegram
 qg pack build --pack . --language en --register maker_announcement --tag social.x --target patchpitch-legacy --public --out out/x-reference
 qg pack build --pack . --language ru --register essay --tag social.longform --public --out out/longform
 ```
@@ -28,3 +28,10 @@ versions required for compatibility or an exact release task.
 All new examples are original AI-prepared fixtures. Their sample facts belong only
 to those fictional examples and never supplement a user's task brief. New modes are
 not a completed model comparison or an owner's validated voice.
+
+`examples.common` selects the RU essay examples independently of the shared rules.
+The vivid set includes fictional before/after pairs about a weather snapshot, an
+archive search and a support queue. Each shows a concrete angle, an explanation and
+a meaningful limit. They are demonstrations, not mandatory paragraph templates.
+A child pack can omit this tag and explicitly select its own permitted local pool.
+An omitted optional example is reported in the compiled context; no example is cut mid-text.

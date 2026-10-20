@@ -26,5 +26,5 @@ jobs:
             done
           done
       - run: qg pack build --pack . --language en --register maker_announcement --target patchpitch-legacy --public --out out/legacy
-      - run: qg pack build --pack . --language ru --register essay --tag delivery.vivid --tag social.telegram --public --out out/vivid
+      - run: qg pack build --pack . --language ru --register essay --tag delivery.vivid --tag examples.common --tag social.telegram --public --out out/vivid
       - run: qg pack build --pack . --language en --register maker_announcement --tag social.x --target patchpitch-legacy --public --out out/social-legacy

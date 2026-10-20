@@ -26,7 +26,10 @@ announcement example. `voice.json` is canonical; `examples/` and `VOICE.md` aid 
 The lock detects stale engine/data versions. This pack contains no private corpus and
 does not depend on an author's personal pack. Generated exports do not install consumers.
 
-Version 0.2.0 adds optional [vivid delivery and social-platform guidance](docs/delivery.md).
-Use `--tag delivery.vivid` and the appropriate `social.telegram`, `social.x`, or
+Version 0.3.0 adds original before/after demonstrations to the optional
+[vivid delivery and social-platform guidance](docs/delivery.md).
+Use `--tag delivery.vivid --tag examples.common` and the appropriate `social.telegram`, `social.x`, or
 `social.longform` tag. Emoji are contextual and optional. No named author is an
 imitation target, and no source passages are included.
+RU essay examples are opt-in through `examples.common`; the rules work independently
+of that example pool. A child pack can omit this tag and select its own permitted examples.

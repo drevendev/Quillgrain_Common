@@ -1,7 +1,7 @@
 {
   "schema_version": "quillgrain.voice-pack/v1",
   "id": "quillgrain.common",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "visibility": "public",
   "status": "REVIEWED",
   "languages": [
@@ -124,7 +124,7 @@
           "delivery.vivid"
         ]
       },
-      "instruction": "Open with a concrete observation, useful change or small puzzle; explain why it matters to this reader.",
+      "instruction": "Start from a specific object, discrepancy or practical irritation. Develop its mechanism into a reader-facing consequence; give the post an angle rather than a catalogue of capabilities.",
       "priority": 75,
       "enforcement": "human_review",
       "evidence_ids": [],
@@ -149,7 +149,7 @@
           "delivery.vivid"
         ]
       },
-      "instruction": "An apt analogy or dry joke may sharpen the explanation. Use a fresh example; the joke need not be in every paragraph.",
+      "instruction": "Use a precise dry observation or a fresh explanatory image when it earns its place. Let the image illuminate the mechanism, then return to it; avoid canned excitement or a punchline attached to every paragraph.",
       "priority": 60,
       "enforcement": "human_review",
       "evidence_ids": [],
@@ -174,7 +174,7 @@
           "delivery.vivid"
         ]
       },
-      "instruction": "Mix short reactions with enough connected explanation. Keep specialist nouns when useful and make the reasoning easy to follow.",
+      "instruction": "Let sentence lengths do different jobs: a brief observation can interrupt a connected explanation. Prefer visible actions and ordinary verbs to nominalized procedural language.",
       "priority": 60,
       "enforcement": "human_review",
       "evidence_ids": [],
@@ -330,7 +330,9 @@
       },
       "visibility": "public",
       "role": "positive",
-      "tags": [],
+      "tags": [
+        "examples.common"
+      ],
       "priority": 50,
       "authorship": "synthetic_ai_prepared",
       "status": "REVIEWED"
@@ -549,7 +551,8 @@
       "visibility": "public",
       "role": "positive",
       "tags": [
-        "delivery.vivid"
+        "delivery.vivid",
+        "examples.common"
       ],
       "priority": 60,
       "authorship": "synthetic_ai_prepared",
@@ -643,6 +646,99 @@
       "priority": 60,
       "authorship": "synthetic_ai_prepared",
       "status": "REVIEWED"
+    },
+    {
+      "authorship": "synthetic_ai_prepared",
+      "before": "Условный сервис поддерживает сохранение прогноза погоды с меткой времени для последующего сопоставления показаний.",
+      "channel": "narration",
+      "id": "common.ru.v3.weather-snapshot",
+      "language": "ru",
+      "permissions": {
+        "approved_model_hosts": [
+          "offline",
+          "chatgpt",
+          "codex",
+          "ollama"
+        ],
+        "local_analysis": true,
+        "private_git_excerpt": true,
+        "public_redistribution": true,
+        "retrieval": true
+      },
+      "priority": 90,
+      "register": "essay",
+      "role": "before_after",
+      "source_id": "common.original-v3",
+      "status": "REVIEWED",
+      "tags": [
+        "delivery.vivid",
+        "examples.common"
+      ],
+      "text": "Прогноз обещает солнце, а за окном дождь. Обещание хотя бы можно сохранить: условный сервис записывает прогноз вместе со временем обновления. Теперь видно, что именно он показывал утром. Причину промаха снимок не объяснит. Зато спорить придётся с конкретной записью, а не с воспоминанием о вчерашней тучке.",
+      "visibility": "public",
+      "work_id": "common.ru.v3.weather-snapshot"
+    },
+    {
+      "authorship": "synthetic_ai_prepared",
+      "before": "В условном архиве реализован поиск по содержимому документов, расширяющий возможности навигации относительно поиска по названию.",
+      "channel": "narration",
+      "id": "common.ru.v3.archive-search",
+      "language": "ru",
+      "permissions": {
+        "approved_model_hosts": [
+          "offline",
+          "chatgpt",
+          "codex",
+          "ollama"
+        ],
+        "local_analysis": true,
+        "private_git_excerpt": true,
+        "public_redistribution": true,
+        "retrieval": true
+      },
+      "priority": 90,
+      "register": "essay",
+      "role": "before_after",
+      "source_id": "common.original-v3",
+      "status": "REVIEWED",
+      "tags": [
+        "delivery.vivid",
+        "examples.common"
+      ],
+      "text": "Отчёт лежит в папке «Разное». Название честное, найти по нему ничего нельзя. В условном архиве поиск заглядывает внутрь документов: можно вспомнить фразу из отчёта и выйти на нужный файл. Скан без распознанного текста он не прочитает. Порядка в папке не прибавилось, но появилась возможность отыскать вещь до генеральной уборки.",
+      "visibility": "public",
+      "work_id": "common.ru.v3.archive-search"
+    },
+    {
+      "authorship": "synthetic_ai_prepared",
+      "before": "В условной службе поддержки доступно отображение очереди обращений, повышающее прозрачность процесса обработки.",
+      "channel": "narration",
+      "id": "common.ru.v3.ticket-queue",
+      "language": "ru",
+      "permissions": {
+        "approved_model_hosts": [
+          "offline",
+          "chatgpt",
+          "codex",
+          "ollama"
+        ],
+        "local_analysis": true,
+        "private_git_excerpt": true,
+        "public_redistribution": true,
+        "retrieval": true
+      },
+      "priority": 90,
+      "register": "essay",
+      "role": "before_after",
+      "source_id": "common.original-v3",
+      "status": "REVIEWED",
+      "tags": [
+        "delivery.vivid",
+        "examples.common"
+      ],
+      "text": "Надпись «обращение принято» умеет выглядеть как ответ, ничего не отвечая. Условная служба поддержки показывает очередь и отмечает, взял ли сотрудник заявку в работу. Пользователь видит стадию, а не очередное подтверждение собственного существования. Дата решения от этого не становится известной. Видимый процесс полезен ровно до той границы, где начинаются обещания.",
+      "visibility": "public",
+      "work_id": "common.ru.v3.ticket-queue"
     }
   ],
   "provenance": [
@@ -655,6 +751,11 @@
       "id": "common.original-v2",
       "kind": "synthetic_ai_prepared",
       "note": "Original designed delivery/emoji examples; no third-party passages or personal writing copied. Named-author imitation is not a supported mode."
+    },
+    {
+      "id": "common.original-v3",
+      "kind": "synthetic_ai_prepared",
+      "note": "Three original fictional before/after demonstrations; no source author text, personal passages, task outputs or named-author imitation."
     }
   ],
   "compatibility": {
@@ -675,7 +776,8 @@
   },
   "limitations": [
     "Designed editorial guidance, not a human author corpus.",
-    "New vivid/social modes have no new LIVE comparison or owner acceptance.",
-    "Third-party reading references supply no text or named imitation targets to prompts."
+    "Delivery examples use fictional facts which never supplement the task brief.",
+    "RU essay examples require the explicit examples.common tag; this permits a child pack to supply its own example pool.",
+    "Literary quality and recognizable voice require scoped human assessment."
   ]
 }

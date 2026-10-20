@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.0
+
+Three original fictional before/after essay demonstrations and more concrete vivid
+delivery guidance. RU essay examples use the explicit `examples.common` selector,
+allowing child packs to supply a different example pool. No model quality claim.
+
 ## 0.2.0
 
 Optional vivid delivery, platform-specific emoji guidance, profanity-free colloquial
