@@ -1,0 +1,338 @@
+{
+  "schema_version": "quillgrain.voice-pack/v1",
+  "id": "quillgrain.common",
+  "version": "0.1.0",
+  "visibility": "public",
+  "status": "REVIEWED",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "registers": [
+    "conversational",
+    "essay",
+    "fiction_narration",
+    "maker_announcement"
+  ],
+  "extends": [],
+  "rules": [
+    {
+      "id": "common.purpose",
+      "kind": "preference",
+      "scope": {},
+      "instruction": "Give each paragraph a clear purpose: information, explanation, an example or a useful transition.",
+      "priority": 50,
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "origin": "designed_default",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.natural",
+      "kind": "preference",
+      "scope": {},
+      "instruction": "Use concrete, natural wording appropriate to the reader; explain unfamiliar terms when needed.",
+      "priority": 50,
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "origin": "designed_default",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.range",
+      "kind": "preference",
+      "scope": {},
+      "instruction": "Vary pace as the task needs. Dashes, metaphor, humour and long sentences are available choices.",
+      "priority": 50,
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "origin": "designed_default",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.restraint",
+      "kind": "preference",
+      "scope": {},
+      "instruction": "Let useful detail carry emphasis; promotional excitement is optional.",
+      "priority": 40,
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "origin": "designed_default",
+      "status": "REVIEWED"
+    }
+  ],
+  "examples": [
+    {
+      "id": "common.ru.conversational",
+      "text": "Оставил заметку рядом с задачей. Когда вернусь к ней, не придётся вспоминать, почему выбрал этот вариант.",
+      "language": "ru",
+      "register": "conversational",
+      "source_id": "common.original-v1",
+      "work_id": "common.ru.conversational",
+      "channel": "narration",
+      "permissions": {
+        "local_analysis": true,
+        "retrieval": true,
+        "private_git_excerpt": true,
+        "approved_model_hosts": [
+          "offline",
+          "chatgpt",
+          "codex",
+          "ollama"
+        ],
+        "public_redistribution": true
+      },
+      "visibility": "public",
+      "role": "positive",
+      "tags": [],
+      "priority": 50,
+      "authorship": "synthetic_ai_prepared",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.ru.essay",
+      "text": "Поиск по заголовкам удобен, пока названия точны. Если заметка названа наспех, полезнее искать по содержимому: это разные способы вспомнить одну вещь.",
+      "language": "ru",
+      "register": "essay",
+      "source_id": "common.original-v1",
+      "work_id": "common.ru.essay",
+      "channel": "narration",
+      "permissions": {
+        "local_analysis": true,
+        "retrieval": true,
+        "private_git_excerpt": true,
+        "approved_model_hosts": [
+          "offline",
+          "chatgpt",
+          "codex",
+          "ollama"
+        ],
+        "public_redistribution": true
+      },
+      "visibility": "public",
+      "role": "positive",
+      "tags": [],
+      "priority": 50,
+      "authorship": "synthetic_ai_prepared",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.ru.fiction_narration",
+      "text": "На подоконнике стояла чашка с остывшим чаем. Смотритель подвинул её, освобождая место для мокрой карты.",
+      "language": "ru",
+      "register": "fiction_narration",
+      "source_id": "common.original-v1",
+      "work_id": "common.ru.fiction_narration",
+      "channel": "narration",
+      "permissions": {
+        "local_analysis": true,
+        "retrieval": true,
+        "private_git_excerpt": true,
+        "approved_model_hosts": [
+          "offline",
+          "chatgpt",
+          "codex",
+          "ollama"
+        ],
+        "public_redistribution": true
+      },
+      "visibility": "public",
+      "role": "positive",
+      "tags": [],
+      "priority": 50,
+      "authorship": "synthetic_ai_prepared",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.ru.maker_announcement",
+      "text": "В мастерской появился список материалов. Теперь видно, что уже есть и что ещё нужно принести. Список можно сохранить в текстовый файл.",
+      "language": "ru",
+      "register": "maker_announcement",
+      "source_id": "common.original-v1",
+      "work_id": "common.ru.maker_announcement",
+      "channel": "narration",
+      "permissions": {
+        "local_analysis": true,
+        "retrieval": true,
+        "private_git_excerpt": true,
+        "approved_model_hosts": [
+          "offline",
+          "chatgpt",
+          "codex",
+          "ollama"
+        ],
+        "public_redistribution": true
+      },
+      "visibility": "public",
+      "role": "positive",
+      "tags": [],
+      "priority": 50,
+      "authorship": "synthetic_ai_prepared",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.en.conversational",
+      "text": "I left a note beside the task. When I return, I can see why I chose that option.",
+      "language": "en",
+      "register": "conversational",
+      "source_id": "common.original-v1",
+      "work_id": "common.en.conversational",
+      "channel": "narration",
+      "permissions": {
+        "local_analysis": true,
+        "retrieval": true,
+        "private_git_excerpt": true,
+        "approved_model_hosts": [
+          "offline",
+          "chatgpt",
+          "codex",
+          "ollama"
+        ],
+        "public_redistribution": true
+      },
+      "visibility": "public",
+      "role": "positive",
+      "tags": [],
+      "priority": 50,
+      "authorship": "synthetic_ai_prepared",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.en.essay",
+      "text": "Title search works well when names are precise. A hurried title makes content search more useful: the two methods help recall the same thing.",
+      "language": "en",
+      "register": "essay",
+      "source_id": "common.original-v1",
+      "work_id": "common.en.essay",
+      "channel": "narration",
+      "permissions": {
+        "local_analysis": true,
+        "retrieval": true,
+        "private_git_excerpt": true,
+        "approved_model_hosts": [
+          "offline",
+          "chatgpt",
+          "codex",
+          "ollama"
+        ],
+        "public_redistribution": true
+      },
+      "visibility": "public",
+      "role": "positive",
+      "tags": [],
+      "priority": 50,
+      "authorship": "synthetic_ai_prepared",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.en.fiction_narration",
+      "text": "A cup of cold tea stood on the windowsill. The keeper moved it aside to make room for the wet map.",
+      "language": "en",
+      "register": "fiction_narration",
+      "source_id": "common.original-v1",
+      "work_id": "common.en.fiction_narration",
+      "channel": "narration",
+      "permissions": {
+        "local_analysis": true,
+        "retrieval": true,
+        "private_git_excerpt": true,
+        "approved_model_hosts": [
+          "offline",
+          "chatgpt",
+          "codex",
+          "ollama"
+        ],
+        "public_redistribution": true
+      },
+      "visibility": "public",
+      "role": "positive",
+      "tags": [],
+      "priority": 50,
+      "authorship": "synthetic_ai_prepared",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.en.maker_announcement",
+      "text": "The workshop now has a materials list. You can see what is available, add missing supplies, and save the list as a text file.",
+      "language": "en",
+      "register": "maker_announcement",
+      "source_id": "common.original-v1",
+      "work_id": "common.en.maker_announcement",
+      "channel": "narration",
+      "permissions": {
+        "local_analysis": true,
+        "retrieval": true,
+        "private_git_excerpt": true,
+        "approved_model_hosts": [
+          "offline",
+          "chatgpt",
+          "codex",
+          "ollama"
+        ],
+        "public_redistribution": true
+      },
+      "visibility": "public",
+      "role": "positive",
+      "tags": [],
+      "priority": 50,
+      "authorship": "synthetic_ai_prepared",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.ru.negative",
+      "text": "Это невероятная инновация, которая навсегда преобразит ваш опыт ведения списка.",
+      "language": "ru",
+      "register": "maker_announcement",
+      "source_id": "common.original-v1",
+      "work_id": "common.ru.negative",
+      "channel": "narration",
+      "permissions": {
+        "local_analysis": true,
+        "retrieval": true,
+        "private_git_excerpt": true,
+        "approved_model_hosts": [
+          "offline",
+          "chatgpt",
+          "codex",
+          "ollama"
+        ],
+        "public_redistribution": true
+      },
+      "visibility": "public",
+      "role": "negative",
+      "tags": [
+        "include_negative"
+      ],
+      "priority": 10,
+      "authorship": "synthetic_ai_prepared",
+      "status": "REVIEWED"
+    }
+  ],
+  "provenance": [
+    {
+      "id": "common.original-v1",
+      "kind": "synthetic_ai_prepared",
+      "note": "Original fixtures written for this pack; no personal or third-party corpus. Desired examples, not measured human writing."
+    }
+  ],
+  "compatibility": {
+    "engine": "0.1",
+    "schema": "v1"
+  },
+  "permissions": {
+    "local_analysis": true,
+    "retrieval": true,
+    "private_git_excerpt": true,
+    "approved_model_hosts": [
+      "offline",
+      "chatgpt",
+      "codex",
+      "ollama"
+    ],
+    "public_redistribution": true
+  },
+  "limitations": [
+    "RU editorial examples; owner preference not tested.",
+    "EN_EDITORIALLY_PREPARED_COMPARATIVE_EVAL_NOT_RUN"
+  ]
+}
