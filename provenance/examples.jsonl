@@ -1,9 +1,13 @@
-{"id": "common.ru.conversational", "source_id": "common.original-v1", "authorship": "synthetic_ai_prepared", "rights": "MIT original fixture"}
-{"id": "common.ru.essay", "source_id": "common.original-v1", "authorship": "synthetic_ai_prepared", "rights": "MIT original fixture"}
-{"id": "common.ru.fiction_narration", "source_id": "common.original-v1", "authorship": "synthetic_ai_prepared", "rights": "MIT original fixture"}
-{"id": "common.ru.maker_announcement", "source_id": "common.original-v1", "authorship": "synthetic_ai_prepared", "rights": "MIT original fixture"}
-{"id": "common.en.conversational", "source_id": "common.original-v1", "authorship": "synthetic_ai_prepared", "rights": "MIT original fixture"}
-{"id": "common.en.essay", "source_id": "common.original-v1", "authorship": "synthetic_ai_prepared", "rights": "MIT original fixture"}
-{"id": "common.en.fiction_narration", "source_id": "common.original-v1", "authorship": "synthetic_ai_prepared", "rights": "MIT original fixture"}
-{"id": "common.en.maker_announcement", "source_id": "common.original-v1", "authorship": "synthetic_ai_prepared", "rights": "MIT original fixture"}
-{"id": "common.ru.negative", "source_id": "common.original-v1", "authorship": "synthetic_ai_prepared", "rights": "MIT original fixture"}
+{"authorship":"synthetic_ai_prepared","id":"common.ru.conversational","rights":"MIT original synthetic fixture","source_id":"common.original-v1"}
+{"authorship":"synthetic_ai_prepared","id":"common.ru.essay","rights":"MIT original synthetic fixture","source_id":"common.original-v1"}
+{"authorship":"synthetic_ai_prepared","id":"common.ru.fiction_narration","rights":"MIT original synthetic fixture","source_id":"common.original-v1"}
+{"authorship":"synthetic_ai_prepared","id":"common.ru.maker_announcement","rights":"MIT original synthetic fixture","source_id":"common.original-v1"}
+{"authorship":"synthetic_ai_prepared","id":"common.en.conversational","rights":"MIT original synthetic fixture","source_id":"common.original-v1"}
+{"authorship":"synthetic_ai_prepared","id":"common.en.essay","rights":"MIT original synthetic fixture","source_id":"common.original-v1"}
+{"authorship":"synthetic_ai_prepared","id":"common.en.fiction_narration","rights":"MIT original synthetic fixture","source_id":"common.original-v1"}
+{"authorship":"synthetic_ai_prepared","id":"common.en.maker_announcement","rights":"MIT original synthetic fixture","source_id":"common.original-v1"}
+{"authorship":"synthetic_ai_prepared","id":"common.ru.negative","rights":"MIT original synthetic fixture","source_id":"common.original-v1"}
+{"authorship":"synthetic_ai_prepared","id":"common.ru.vivid-essay","rights":"MIT original synthetic fixture","source_id":"common.original-v2"}
+{"authorship":"synthetic_ai_prepared","id":"common.ru.telegram","rights":"MIT original synthetic fixture","source_id":"common.original-v2"}
+{"authorship":"synthetic_ai_prepared","id":"common.en.telegram","rights":"MIT original synthetic fixture","source_id":"common.original-v2"}
+{"authorship":"synthetic_ai_prepared","id":"common.ru.x","rights":"MIT original synthetic fixture","source_id":"common.original-v2"}

@@ -1,7 +1,7 @@
 {
   "schema_version": "quillgrain.voice-pack/v1",
   "id": "quillgrain.common",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "visibility": "public",
   "status": "REVIEWED",
   "languages": [
@@ -55,6 +55,225 @@
       "scope": {},
       "instruction": "Let useful detail carry emphasis; promotional excitement is optional.",
       "priority": 40,
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "origin": "designed_default",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.publishable-language",
+      "kind": "constraint",
+      "scope": {
+        "languages": [
+          "ru",
+          "en"
+        ],
+        "registers": [
+          "conversational",
+          "essay",
+          "fiction_narration",
+          "maker_announcement"
+        ],
+        "channel": "all"
+      },
+      "instruction": "Use colloquial language without profanity or targeted insults; keep force through concrete wording.",
+      "priority": 100,
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "origin": "designed_default",
+      "status": "REVIEWED",
+      "required": true
+    },
+    {
+      "id": "common.version-placement",
+      "kind": "preference",
+      "scope": {
+        "languages": [
+          "ru",
+          "en"
+        ],
+        "registers": [
+          "conversational",
+          "essay",
+          "maker_announcement"
+        ],
+        "channel": "narration"
+      },
+      "instruction": "Keep version codes out of a general-reader opening unless essential news; retain required versions in a technical note.",
+      "priority": 85,
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "origin": "designed_default",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.vivid.entry",
+      "kind": "preference",
+      "scope": {
+        "languages": [
+          "ru",
+          "en"
+        ],
+        "registers": [
+          "conversational",
+          "essay",
+          "maker_announcement"
+        ],
+        "channel": "narration",
+        "tags": [
+          "delivery.vivid"
+        ]
+      },
+      "instruction": "Open with a concrete observation, useful change or small puzzle; explain why it matters to this reader.",
+      "priority": 75,
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "origin": "designed_default",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.vivid.humor",
+      "kind": "preference",
+      "scope": {
+        "languages": [
+          "ru",
+          "en"
+        ],
+        "registers": [
+          "conversational",
+          "essay",
+          "maker_announcement"
+        ],
+        "channel": "narration",
+        "tags": [
+          "delivery.vivid"
+        ]
+      },
+      "instruction": "An apt analogy or dry joke may sharpen the explanation. Use a fresh example; the joke need not be in every paragraph.",
+      "priority": 60,
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "origin": "designed_default",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.vivid.texture",
+      "kind": "preference",
+      "scope": {
+        "languages": [
+          "ru",
+          "en"
+        ],
+        "registers": [
+          "conversational",
+          "essay",
+          "maker_announcement"
+        ],
+        "channel": "narration",
+        "tags": [
+          "delivery.vivid"
+        ]
+      },
+      "instruction": "Mix short reactions with enough connected explanation. Keep specialist nouns when useful and make the reasoning easy to follow.",
+      "priority": 60,
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "origin": "designed_default",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.vivid.scene",
+      "kind": "preference",
+      "scope": {
+        "languages": [
+          "ru",
+          "en"
+        ],
+        "registers": [
+          "fiction_narration"
+        ],
+        "channel": "narration",
+        "tags": [
+          "delivery.vivid"
+        ]
+      },
+      "instruction": "Anchor a scene in actions and material detail. An incongruity can add humour when earned; keep the narrator and each character distinct.",
+      "priority": 60,
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "origin": "designed_default",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.emoji.telegram",
+      "kind": "preference",
+      "scope": {
+        "languages": [
+          "ru",
+          "en"
+        ],
+        "registers": [
+          "conversational",
+          "essay",
+          "maker_announcement"
+        ],
+        "channel": "narration",
+        "tags": [
+          "social.telegram"
+        ]
+      },
+      "instruction": "For Telegram, use zero to two fitting emoji when they add tone or navigation. A serious post can use none; no automatic emoji on every heading.",
+      "priority": 80,
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "origin": "designed_default",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.emoji.x",
+      "kind": "preference",
+      "scope": {
+        "languages": [
+          "ru",
+          "en"
+        ],
+        "registers": [
+          "conversational",
+          "essay",
+          "maker_announcement"
+        ],
+        "channel": "narration",
+        "tags": [
+          "social.x"
+        ]
+      },
+      "instruction": "For X, prefer zero or one relevant emoji and respect the supplied platform budget. Do not replace a necessary word or qualifier with a symbol.",
+      "priority": 80,
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "origin": "designed_default",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.emoji.longform",
+      "kind": "preference",
+      "scope": {
+        "languages": [
+          "ru",
+          "en"
+        ],
+        "registers": [
+          "conversational",
+          "essay",
+          "maker_announcement"
+        ],
+        "channel": "narration",
+        "tags": [
+          "social.longform"
+        ]
+      },
+      "instruction": "For long-form essays, reviews and documentation, use no emoji by default; add them only when the brief or established format calls for them.",
+      "priority": 80,
       "enforcement": "human_review",
       "evidence_ids": [],
       "origin": "designed_default",
@@ -306,6 +525,124 @@
       "priority": 10,
       "authorship": "synthetic_ai_prepared",
       "status": "REVIEWED"
+    },
+    {
+      "id": "common.ru.vivid-essay",
+      "text": "Положил три черновика в одну папку и потерял нужный. У текста всё было хорошо, кроме адреса. Теперь имя файла начинается с темы, а дату я оставляю в конце: искать стало понятнее, хотя писать от этого легче не стало.",
+      "language": "ru",
+      "register": "essay",
+      "source_id": "common.original-v2",
+      "work_id": "common.ru.vivid-essay",
+      "channel": "narration",
+      "permissions": {
+        "local_analysis": true,
+        "retrieval": true,
+        "private_git_excerpt": true,
+        "approved_model_hosts": [
+          "offline",
+          "chatgpt",
+          "codex",
+          "ollama"
+        ],
+        "public_redistribution": true
+      },
+      "visibility": "public",
+      "role": "positive",
+      "tags": [
+        "delivery.vivid"
+      ],
+      "priority": 60,
+      "authorship": "synthetic_ai_prepared",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.ru.telegram",
+      "text": "🧰 В списке задач появился поиск по заметкам. Вводите слово — видите совпадения и переходите к нужному месту. Вложения он пока не читает. Забытое название файла больше не повод открывать всю папку по очереди.",
+      "language": "ru",
+      "register": "maker_announcement",
+      "source_id": "common.original-v2",
+      "work_id": "common.ru.telegram",
+      "channel": "narration",
+      "permissions": {
+        "local_analysis": true,
+        "retrieval": true,
+        "private_git_excerpt": true,
+        "approved_model_hosts": [
+          "offline",
+          "chatgpt",
+          "codex",
+          "ollama"
+        ],
+        "public_redistribution": true
+      },
+      "visibility": "public",
+      "role": "positive",
+      "tags": [
+        "delivery.vivid",
+        "social.telegram"
+      ],
+      "priority": 60,
+      "authorship": "synthetic_ai_prepared",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.en.telegram",
+      "text": "🧰 Note search is here. Enter a word, inspect the matches, and jump to the right passage. Attachments are still outside its scope. A forgotten filename no longer means opening every note.",
+      "language": "en",
+      "register": "maker_announcement",
+      "source_id": "common.original-v2",
+      "work_id": "common.en.telegram",
+      "channel": "narration",
+      "permissions": {
+        "local_analysis": true,
+        "retrieval": true,
+        "private_git_excerpt": true,
+        "approved_model_hosts": [
+          "offline",
+          "chatgpt",
+          "codex",
+          "ollama"
+        ],
+        "public_redistribution": true
+      },
+      "visibility": "public",
+      "role": "positive",
+      "tags": [
+        "delivery.vivid",
+        "social.telegram"
+      ],
+      "priority": 60,
+      "authorship": "synthetic_ai_prepared",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.ru.x",
+      "text": "В заметках появился поиск по тексту. Введите слово и переходите прямо к совпадению. Вложения пока не ищутся.",
+      "language": "ru",
+      "register": "maker_announcement",
+      "source_id": "common.original-v2",
+      "work_id": "common.ru.x",
+      "channel": "narration",
+      "permissions": {
+        "local_analysis": true,
+        "retrieval": true,
+        "private_git_excerpt": true,
+        "approved_model_hosts": [
+          "offline",
+          "chatgpt",
+          "codex",
+          "ollama"
+        ],
+        "public_redistribution": true
+      },
+      "visibility": "public",
+      "role": "positive",
+      "tags": [
+        "social.x"
+      ],
+      "priority": 60,
+      "authorship": "synthetic_ai_prepared",
+      "status": "REVIEWED"
     }
   ],
   "provenance": [
@@ -313,6 +650,11 @@
       "id": "common.original-v1",
       "kind": "synthetic_ai_prepared",
       "note": "Original fixtures written for this pack; no personal or third-party corpus. Desired examples, not measured human writing."
+    },
+    {
+      "id": "common.original-v2",
+      "kind": "synthetic_ai_prepared",
+      "note": "Original designed delivery/emoji examples; no third-party passages or personal writing copied. Named-author imitation is not a supported mode."
     }
   ],
   "compatibility": {
@@ -332,7 +674,8 @@
     "public_redistribution": true
   },
   "limitations": [
-    "RU editorial examples; owner preference not tested.",
-    "EN_EDITORIALLY_PREPARED_COMPARATIVE_EVAL_NOT_RUN"
+    "Designed editorial guidance, not a human author corpus.",
+    "New vivid/social modes have no new LIVE comparison or owner acceptance.",
+    "Third-party reading references supply no text or named imitation targets to prompts."
   ]
 }
