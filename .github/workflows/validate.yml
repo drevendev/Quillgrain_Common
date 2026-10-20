@@ -1,0 +1,28 @@
+name: Validate original pack
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: drevendev/Quillgrain
+          ref: 3b928fad948a6bd4e069e68a7255bc7996853516
+          path: .engine
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -r .engine/requirements-dev.lock.txt
+      - run: python -m pip install --no-deps --no-build-isolation ./.engine
+      - run: qg pack validate --pack .
+      - name: Compile every declared mode
+        run: |
+          for lang in ru en; do
+            for register in conversational essay fiction_narration maker_announcement; do
+              qg pack build --pack . --language "$lang" --register "$register" --public --out "out/$lang/$register"
+            done
+          done
+      - run: qg pack build --pack . --language en --register maker_announcement --target patchpitch-legacy --public --out out/legacy
