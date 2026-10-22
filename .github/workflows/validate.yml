@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: drevendev/Quillgrain
-          ref: 3b928fad948a6bd4e069e68a7255bc7996853516
+          ref: c96d79f976f389a9fd16bda5f072f5274adabca0
           path: .engine
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
@@ -26,3 +26,5 @@ jobs:
             done
           done
       - run: qg pack build --pack . --language en --register maker_announcement --target patchpitch-legacy --public --out out/legacy
+      - run: qg pack build --pack . --language ru --register essay --tag delivery.vivid --tag examples.common --tag social.telegram --public --out out/vivid
+      - run: qg pack build --pack . --language en --register maker_announcement --tag social.x --target patchpitch-legacy --public --out out/social-legacy

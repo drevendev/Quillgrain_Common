@@ -25,3 +25,11 @@ Registers: conversational, essay, fiction_narration, maker_announcement. Add
 announcement example. `voice.json` is canonical; `examples/` and `VOICE.md` aid reading.
 The lock detects stale engine/data versions. This pack contains no private corpus and
 does not depend on an author's personal pack. Generated exports do not install consumers.
+
+Version 0.4.2 seeks a conversational middle ground with optional situational irony, explicit boundaries on invented explanations and unsolicited calls to action. Version 0.4.1 refines the conversational default with quieter factual openings and a restrained announcement example. Version 0.4.0 makes the revised Russian voice active by default. It adds four original synthetic demonstrations, a fact/borrowed-phrase boundary, connected rhythm and scoped humor. English guidance is retained. This is a CANDIDATE editorial release; human preference and general writing quality are not validated.
+
+See [delivery and upgrade notes](docs/delivery.md), including the changed RU example selection: omitting `examples.common` alone no longer disables the four default register examples. The pinned engine/lock is unchanged as a dependency; the new lock records the new pack digest. Existing consumers pinned to 0.3.0 keep their old identity and require an explicit upgrade/re-export.
+
+Full source corpora and local inference evidence are kept outside this public checkout. No source joke, source plot or named-author imitation target is bundled. The pack is data only; it does not run retrieval, an LLM, or fine-tuning.
+
+The owner accepted 0.4.2 as the current Russian editorial baseline after reviewing paired announcement outputs. This scoped decision is not general quality or factual validation: local trials still show invented explanations and confused event states. Review generated facts before publication; the pack remains CANDIDATE.
