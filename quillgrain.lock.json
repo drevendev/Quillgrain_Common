@@ -1,1 +1,10 @@
-{"engine_version":"0.1.0rc2","packs":[{"digest":"0358afa6fa49bf2256d868c9653fee3e9672c6116e4b80d2310715ead2b06b0a","id":"quillgrain.common","version":"0.3.0"}]}
+{
+  "engine_version": "0.1.0rc2",
+  "packs": [
+    {
+      "id": "quillgrain.common",
+      "version": "0.4.2",
+      "digest": "b162511b1e0d6b637ef363dfc72692ac127b888cef6b3fbb2368c204af3ef8e5"
+    }
+  ]
+}

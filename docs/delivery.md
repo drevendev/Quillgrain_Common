@@ -1,37 +1,11 @@
-# Delivery modes
+# Delivery modes in Common 0.4
 
-Common 0.3.0 offers a neutral base and the optional `delivery.vivid` tag. Vivid writing
-can open with a concrete object or puzzle, connect an explanation, vary pace, and use
-an apt fresh analogy or dry joke. For fiction it anchors action/material detail and
-keeps character voices distinct. It does not impose a signature phrase or punchline.
-No named-author imitation or third-party text is shipped in this pack.
+RU concrete, conversational delivery is now the default. In 0.4.2, `delivery.vivid` allows conversational observations, varied rhythm and optional situational irony. It does not require a witty opening or decorative metaphor. Unsolicited calls to action and invented reasons or reader obligations are explicitly discouraged; local trials show that factual errors can still occur. A sober task takes precedence. English delivery behavior is retained from 0.3.
 
-Choose a platform independently:
+The four RU register examples are original synthetic demonstrations and are selected without `examples.common`. The tag remains accepted for existing commands. Former optional RU vivid examples are RETIRED and cannot be selected. A child pack needing a separate example pool must explicitly select that pool using a compatible engine/consumer; merely omitting `examples.common` no longer removes the new RU defaults. Audit selected/omitted examples when upgrading.
 
-```text
-qg pack build --pack . --language ru --register essay --tag delivery.vivid --tag examples.common --tag social.telegram --public --out out/telegram
-qg pack build --pack . --language en --register maker_announcement --tag social.x --target patchpitch-legacy --public --out out/x-reference
-qg pack build --pack . --language ru --register essay --tag social.longform --public --out out/longform
-```
+Choose `social.telegram`, `social.x` or `social.longform` for the destination. Emoji remain optional and bounded by the existing preferences. General-reader version placement is unchanged.
 
-Use the one social tag that describes the actual destination. Emoji can convey tone
-or aid navigation; zero is a valid choice. Telegram guidance suggests zero to two, X
-zero to one, and long-form defaults to none. The task's audience, seriousness and actual
-platform format govern the choice. These are editorial preferences, not platform API
-limits. The engine does not call a model or promise emoji generation quality.
+The 1,200-codepoint `patchpitch-legacy` target cannot carry the full voice and examples: inspect whole-rule/example omission reports. Use a sufficiently budgeted compiled context for the evaluated voice. No consumer or game is automatically changed by this data-pack update.
 
-Use colloquial phrasing without profanity or targeted insults. Keep force through
-specific verbs, useful detail and rhythm. Version codes belong in metadata/a technical
-note for general-reader posts unless that exact version is the news. Do not suppress
-versions required for compatibility or an exact release task.
-
-All new examples are original AI-prepared fixtures. Their sample facts belong only
-to those fictional examples and never supplement a user's task brief. New modes are
-not a completed model comparison or an owner's validated voice.
-
-`examples.common` selects the RU essay examples independently of the shared rules.
-The vivid set includes fictional before/after pairs about a weather snapshot, an
-archive search and a support queue. Each shows a concrete angle, an explanation and
-a meaningful limit. They are demonstrations, not mandatory paragraph templates.
-A child pack can omit this tag and explicitly select its own permitted local pool.
-An omitted optional example is reported in the compiled context; no example is cut mid-text.
+The public pack contains original synthetic examples only. Authorized source material informs editorial choices; raw corpus pages, private paths and model trial outputs stay outside this checkout. Examples must never supply product facts, personal memories, copied punchlines or extra instructions to a new task.

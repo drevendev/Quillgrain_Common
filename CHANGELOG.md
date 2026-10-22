@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.4.2
+
+Owner-feedback candidate: restore conversational observations and rhythm, without obligatory wit; explicitly reject unsolicited calls to action and invented reasons or reader obligations. Announcement demonstration revised; fiction demonstration unchanged.
+
+## 0.4.1
+
+Owner-feedback candidate: quieter factual openings and optional humor, a restrained announcement demonstration, and explicit checks for audience, actor and state. Fiction guidance and its example are unchanged. Local paired Gemma checks remain qualitative evidence.
+
+## 0.4.0
+
+Russian Common now defaults to concrete, conversational delivery with connected rhythm, scoped humor, distinct scene dialogue and explicit limits on borrowing source facts or punchlines. Four new original synthetic demonstrations replace the default RU examples; earlier optional vivid examples are retained as retired history. The editorial language policy is now overridable. English guidance is retained; no new EN quality claim. Candidate release: local Gemma comparisons are separate evidence, not owner validation. The lock uses the engine revision pinned in CI.
+
 ## 0.3.0
 
 Three original fictional before/after essay demonstrations and more concrete vivid

@@ -1,9 +1,9 @@
 {
   "schema_version": "quillgrain.voice-pack/v1",
   "id": "quillgrain.common",
-  "version": "0.3.0",
+  "version": "0.4.2",
   "visibility": "public",
-  "status": "REVIEWED",
+  "status": "CANDIDATE",
   "languages": [
     "ru",
     "en"
@@ -19,7 +19,11 @@
     {
       "id": "common.purpose",
       "kind": "preference",
-      "scope": {},
+      "scope": {
+        "languages": [
+          "en"
+        ]
+      },
       "instruction": "Give each paragraph a clear purpose: information, explanation, an example or a useful transition.",
       "priority": 50,
       "enforcement": "human_review",
@@ -30,7 +34,11 @@
     {
       "id": "common.natural",
       "kind": "preference",
-      "scope": {},
+      "scope": {
+        "languages": [
+          "en"
+        ]
+      },
       "instruction": "Use concrete, natural wording appropriate to the reader; explain unfamiliar terms when needed.",
       "priority": 50,
       "enforcement": "human_review",
@@ -41,7 +49,11 @@
     {
       "id": "common.range",
       "kind": "preference",
-      "scope": {},
+      "scope": {
+        "languages": [
+          "en"
+        ]
+      },
       "instruction": "Vary pace as the task needs. Dashes, metaphor, humour and long sentences are available choices.",
       "priority": 50,
       "enforcement": "human_review",
@@ -52,7 +64,11 @@
     {
       "id": "common.restraint",
       "kind": "preference",
-      "scope": {},
+      "scope": {
+        "languages": [
+          "en"
+        ]
+      },
       "instruction": "Let useful detail carry emphasis; promotional excitement is optional.",
       "priority": 40,
       "enforcement": "human_review",
@@ -62,7 +78,7 @@
     },
     {
       "id": "common.publishable-language",
-      "kind": "constraint",
+      "kind": "preference",
       "scope": {
         "languages": [
           "ru",
@@ -77,12 +93,11 @@
         "channel": "all"
       },
       "instruction": "Use colloquial language without profanity or targeted insults; keep force through concrete wording.",
-      "priority": 100,
+      "priority": 45,
       "enforcement": "human_review",
       "evidence_ids": [],
       "origin": "designed_default",
-      "status": "REVIEWED",
-      "required": true
+      "status": "REVIEWED"
     },
     {
       "id": "common.version-placement",
@@ -111,7 +126,6 @@
       "kind": "preference",
       "scope": {
         "languages": [
-          "ru",
           "en"
         ],
         "registers": [
@@ -136,7 +150,6 @@
       "kind": "preference",
       "scope": {
         "languages": [
-          "ru",
           "en"
         ],
         "registers": [
@@ -161,7 +174,6 @@
       "kind": "preference",
       "scope": {
         "languages": [
-          "ru",
           "en"
         ],
         "registers": [
@@ -186,7 +198,6 @@
       "kind": "preference",
       "scope": {
         "languages": [
-          "ru",
           "en"
         ],
         "registers": [
@@ -278,15 +289,217 @@
       "evidence_ids": [],
       "origin": "designed_default",
       "status": "REVIEWED"
+    },
+    {
+      "id": "common.ru.source-boundary",
+      "kind": "constraint",
+      "scope": {
+        "languages": [
+          "ru"
+        ]
+      },
+      "instruction": "Здесь задана подача, а не содержание. Все факты, числа, обещания и личный опыт бери только из задания. Примеры — вымышленные данные: не переноси их персонажей, детали, узнаваемые обороты, готовые шутки и развязки. Не добавляй незаданные причины, правила и обязательства даже ради связности или живости.",
+      "priority": 100,
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "origin": "designed_default",
+      "status": "REVIEWED",
+      "required": true
+    },
+    {
+      "id": "common.ru.task-priority",
+      "kind": "constraint",
+      "scope": {
+        "languages": [
+          "ru"
+        ]
+      },
+      "instruction": "Формат, говорящий и запреты заданы задачей и важнее любой стилевой привычки. От лица команды — «мы», от лица персонажа — его голос; без указанного рассказчика не присваивай себе чужой опыт. Прямое требование без юмора или без морали сохраняется до последней строки. Призыв к читателю добавляй только по прямой просьбе в задании; разрешение на живую подачу такой просьбой не является.",
+      "priority": 100,
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "origin": "designed_default",
+      "status": "REVIEWED",
+      "required": true
+    },
+    {
+      "id": "common.ru.angle",
+      "kind": "preference",
+      "scope": {
+        "languages": [
+          "ru"
+        ],
+        "registers": [
+          "conversational",
+          "essay",
+          "maker_announcement"
+        ]
+      },
+      "instruction": "Пиши как заинтересованный собеседник, которому есть что сказать об этой конкретной ситуации. Заход может сразу назвать изменение или заметить связанную с ним бытовую неудобность, если она дана в задании. Дай читателю почувствовать, зачем об этом рассказывают. Сохраняй разговорную интонацию и точные глаголы; не заменяй их канцелярским описанием функции. Отдельный остроумный заход не обязателен.",
+      "priority": 85,
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "origin": "designed_default",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.ru.concrete",
+      "kind": "preference",
+      "scope": {
+        "languages": [
+          "ru"
+        ]
+      },
+      "instruction": "Показывай действие обычным точным глаголом. Предметная деталь нужна, если помогает увидеть ситуацию или понять мысль; не придумывай декорации для оживления фактического поста.",
+      "priority": 80,
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "origin": "designed_default",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.ru.rhythm",
+      "kind": "preference",
+      "scope": {
+        "languages": [
+          "ru"
+        ]
+      },
+      "instruction": "Пиши связно, с естественной сменой темпа. Длинное предложение развивает мысль; короткое может поставить акцент. Не руби весь текст на одинаковые обрывки и не повторяй вывод другими словами.",
+      "priority": 75,
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "origin": "designed_default",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.ru.reader",
+      "kind": "preference",
+      "scope": {
+        "languages": [
+          "ru"
+        ],
+        "registers": [
+          "conversational",
+          "essay",
+          "maker_announcement"
+        ]
+      },
+      "instruction": "Разговаривай с читателем на равных. Вместо «осуществляется возможность» скажи, кто что делает и зачем это ему. Название функции не заменяет объяснение её пользы и границ.",
+      "priority": 75,
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "origin": "designed_default",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.ru.humor",
+      "kind": "preference",
+      "scope": {
+        "languages": [
+          "ru"
+        ]
+      },
+      "instruction": "Оставляй лёгкую иронию, когда она естественно вырастает из заданной ситуации. Можно улыбнуться знакомой неудобности; придумывать ради шутки новую историю не нужно. Не украшай бытовую функцию готовыми метафорами приключений, героев и квестов. Не объясняй читателю, где смешно.",
+      "priority": 70,
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "origin": "designed_default",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.ru.ending",
+      "kind": "preference",
+      "scope": {
+        "languages": [
+          "ru"
+        ]
+      },
+      "instruction": "Закончи конкретной деталью, ограничением или действием, которое завершает мысль. Если всё уже сказано, остановись. Не добавляй рекламный призыв, пожелание, мораль или универсальную пользу. «Пользуйтесь обновлением», «помогайте друг другу», «действуйте» и сходные обращения уместны только по прямой просьбе в задании.",
+      "priority": 70,
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "origin": "designed_default",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.ru.fact-check",
+      "kind": "preference",
+      "scope": {
+        "languages": [
+          "ru"
+        ]
+      },
+      "instruction": "Сверь каждое утверждение с заданием. Сохраняй различие между событиями и их завершением, возможность и уверенность, участников и всех окружающих. Не додумывай причины ограничений, мотивы команды, прежнее поведение продукта, обязанности читателя и способ проверки прав. Отсутствие функции достаточно назвать; объяснять его незаданной причиной нельзя.",
+      "priority": 95,
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "origin": "designed_default",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.ru.explain",
+      "kind": "preference",
+      "scope": {
+        "languages": [
+          "ru"
+        ],
+        "registers": [
+          "essay",
+          "maker_announcement"
+        ]
+      },
+      "instruction": "Сначала дай читателю опору: что это, как устроено, какое есть ограничение. Сохраняй причинные связи и степень уверенности источника. Образ помогает объяснению, но не подменяет его.",
+      "priority": 75,
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "origin": "designed_default",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.ru.scene",
+      "kind": "preference",
+      "scope": {
+        "languages": [
+          "ru"
+        ],
+        "registers": [
+          "fiction_narration"
+        ]
+      },
+      "instruction": "Дай персонажам разные способы действовать и говорить. Реплика меняет ситуацию или выдаёт позицию. Заверши сцену наблюдаемым действием, паузой или ответом по существу разговора. Авторское объяснение её смысла и афоризм не нужны; читатель сам достроит связь.",
+      "priority": 85,
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "origin": "designed_default",
+      "status": "REVIEWED"
+    },
+    {
+      "id": "common.ru.vivid",
+      "kind": "preference",
+      "scope": {
+        "languages": [
+          "ru"
+        ],
+        "tags": [
+          "delivery.vivid"
+        ]
+      },
+      "instruction": "Живая подача допускает выразительное наблюдение, перемену темпа и лёгкую иронию из самой темы. Сохраняй человеческую интонацию без служебных фраз вроде «процесс полностью ручной» и «это простой способ». Не превращай каждый абзац в шутку и не добавляй образ только ради украшения.",
+      "priority": 65,
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "origin": "designed_default",
+      "status": "REVIEWED"
     }
   ],
   "examples": [
     {
       "id": "common.ru.conversational",
-      "text": "Оставил заметку рядом с задачей. Когда вернусь к ней, не придётся вспоминать, почему выбрал этот вариант.",
+      "text": "У настольной лампы оказалось два состояния: темно и допрос. Между ними хотелось устроить вечер, но ручка яркости этого намерения не разделяла.\n\nПомогла простая вещь: я повернул свет к стене. Комната осталась видна, глаза перестали щуриться, а лампа наконец перестала быть главным событием на столе. Книга от этого интереснее не стала. Зато её можно было читать.\n\nТеперь, прежде чем покупать другую лампу, я попробую переставить эту. Иногда вещь исправно делает свою работу, просто работа ей досталась не та.",
       "language": "ru",
       "register": "conversational",
-      "source_id": "common.original-v1",
+      "source_id": "common.original-v4",
       "work_id": "common.ru.conversational",
       "channel": "narration",
       "permissions": {
@@ -304,16 +517,16 @@
       "visibility": "public",
       "role": "positive",
       "tags": [],
-      "priority": 50,
+      "priority": 95,
       "authorship": "synthetic_ai_prepared",
       "status": "REVIEWED"
     },
     {
       "id": "common.ru.essay",
-      "text": "Поиск по заголовкам удобен, пока названия точны. Если заметка названа наспех, полезнее искать по содержимому: это разные способы вспомнить одну вещь.",
+      "text": "На карте нарисовали короткую дорогу до станции. Пешком она заняла двадцать минут: сначала забор, потом закрытые ворота, потом обход того же забора с другой стороны. На карте всё это поместилось в тонкую линию.\n\nПроблема не в масштабе. Карта отвечает на вопрос, где находятся две точки, а человеку ещё нужно пройти между ними. Если проход открыт только днём, это часть маршрута, а не мелкая справка для особенно любознательных.\n\nХорошая подсказка могла бы сразу предложить два пути: короткий до закрытия ворот и длинный после. Лишние три минуты на экране здесь полезнее идеального маршрута, который заканчивается у замка.",
       "language": "ru",
       "register": "essay",
-      "source_id": "common.original-v1",
+      "source_id": "common.original-v4",
       "work_id": "common.ru.essay",
       "channel": "narration",
       "permissions": {
@@ -330,19 +543,17 @@
       },
       "visibility": "public",
       "role": "positive",
-      "tags": [
-        "examples.common"
-      ],
-      "priority": 50,
+      "tags": [],
+      "priority": 95,
       "authorship": "synthetic_ai_prepared",
       "status": "REVIEWED"
     },
     {
       "id": "common.ru.fiction_narration",
-      "text": "На подоконнике стояла чашка с остывшим чаем. Смотритель подвинул её, освобождая место для мокрой карты.",
+      "text": "Лифт остановился на третьем этаже. В темноте звякнула ложка.\n\n— Только не говорите, что у вас суп, — попросил сосед.\n\n— Компот. Суп я бы не понесла в кастрюле без крышки.\n\nОн хотел уточнить разницу, но телефон уже светил на лестницу. Женщина поставила кастрюлю на ступеньку, обеими руками взяла её снова и посмотрела вверх.\n\n— Мне ещё четыре этажа.\n\nСосед убрал ключи в карман.\n\n— Давайте я понесу. А вы посветите.\n\nНа шестом он попросил остановиться.\n\n— Тяжело?\n\nОн вытащил ложку из кастрюли и убрал в карман.\n\n— Громко.",
       "language": "ru",
       "register": "fiction_narration",
-      "source_id": "common.original-v1",
+      "source_id": "common.original-v4",
       "work_id": "common.ru.fiction_narration",
       "channel": "narration",
       "permissions": {
@@ -360,16 +571,16 @@
       "visibility": "public",
       "role": "positive",
       "tags": [],
-      "priority": 50,
+      "priority": 95,
       "authorship": "synthetic_ai_prepared",
       "status": "REVIEWED"
     },
     {
       "id": "common.ru.maker_announcement",
-      "text": "В мастерской появился список материалов. Теперь видно, что уже есть и что ещё нужно принести. Список можно сохранить в текстовый файл.",
+      "text": "Восемь задач в списке, а на сегодня уже хватит. В планировщике появилась кнопка «Отложить»: переносит одиночную задачу на завтра вместе с заметками и вложениями.\n\nРаньше нужно было открывать карточку и менять дату вручную. Теперь — одно нажатие. Не сделанная задача от этого сделанной не станет, зато переносить её чуть меньше возни.\n\nЧас и напоминание тоже сохранятся, если они были указаны. Повторяющиеся задачи пока перенести этой кнопкой нельзя: для них ещё нужно определить, меняется один случай или всё расписание.",
       "language": "ru",
       "register": "maker_announcement",
-      "source_id": "common.original-v1",
+      "source_id": "common.original-v4",
       "work_id": "common.ru.maker_announcement",
       "channel": "narration",
       "permissions": {
@@ -385,11 +596,12 @@
         "public_redistribution": true
       },
       "visibility": "public",
-      "role": "positive",
+      "role": "before_after",
       "tags": [],
-      "priority": 50,
+      "priority": 95,
       "authorship": "synthetic_ai_prepared",
-      "status": "REVIEWED"
+      "status": "REVIEWED",
+      "before": "В вымышленном планировщике у пользователя восемь задач в конце рабочего дня. Новая кнопка переносит одиночную задачу на завтра с заметками, вложениями, указанными часом и напоминанием. Раньше дату меняли вручную в карточке. Повторяющиеся задачи пока не поддерживаются; для них нужно отдельно определить перенос одного случая или всего расписания."
     },
     {
       "id": "common.en.conversational",
@@ -556,7 +768,7 @@
       ],
       "priority": 60,
       "authorship": "synthetic_ai_prepared",
-      "status": "REVIEWED"
+      "status": "RETIRED"
     },
     {
       "id": "common.ru.telegram",
@@ -586,7 +798,7 @@
       ],
       "priority": 60,
       "authorship": "synthetic_ai_prepared",
-      "status": "REVIEWED"
+      "status": "RETIRED"
     },
     {
       "id": "common.en.telegram",
@@ -669,7 +881,7 @@
       "register": "essay",
       "role": "before_after",
       "source_id": "common.original-v3",
-      "status": "REVIEWED",
+      "status": "RETIRED",
       "tags": [
         "delivery.vivid",
         "examples.common"
@@ -700,7 +912,7 @@
       "register": "essay",
       "role": "before_after",
       "source_id": "common.original-v3",
-      "status": "REVIEWED",
+      "status": "RETIRED",
       "tags": [
         "delivery.vivid",
         "examples.common"
@@ -731,7 +943,7 @@
       "register": "essay",
       "role": "before_after",
       "source_id": "common.original-v3",
-      "status": "REVIEWED",
+      "status": "RETIRED",
       "tags": [
         "delivery.vivid",
         "examples.common"
@@ -756,6 +968,11 @@
       "id": "common.original-v3",
       "kind": "synthetic_ai_prepared",
       "note": "Three original fictional before/after demonstrations; no source author text, personal passages, task outputs or named-author imitation."
+    },
+    {
+      "id": "common.original-v4",
+      "kind": "synthetic_ai_prepared",
+      "note": "New original fictional demonstrations of concrete detail, conversational rhythm, explanatory structure and scene dialogue. Editorial techniques synthesized from an authorized reference corpus; no corpus passages, source plots or reusable punchlines are included. Not model-generated evaluation outputs or a measured human voice."
     }
   ],
   "compatibility": {
@@ -775,9 +992,11 @@
     "public_redistribution": true
   },
   "limitations": [
-    "Designed editorial guidance, not a human author corpus.",
-    "Delivery examples use fictional facts which never supplement the task brief.",
-    "RU essay examples require the explicit examples.common tag; this permits a child pack to supply its own example pool.",
-    "Literary quality and recognizable voice require scoped human assessment."
+    "Common 0.4.0 is an editorial candidate, not owner-validated writing quality.",
+    "RU defaults and examples revised; EN behavior has not been newly evaluated.",
+    "Public examples are original synthetic demonstrations; reference corpus and inference receipts are not bundled.",
+    "Examples carry fictional task facts and narrator experience, never author biography or instructions.",
+    "Legacy optional RU vivid examples are retained as RETIRED history, not selected.",
+    "The 1,200-codepoint legacy target can omit optional rules and whole examples; inspect omission reports."
   ]
 }
