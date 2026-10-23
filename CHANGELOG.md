@@ -1,5 +1,12 @@
 # Changelog
 
+## Repository rename and corpus migration — 2026-10-23
+
+Renamed to Quillgrain_Voice_Common; quillgrain.common and 0.4.2 voice data are
+unchanged. Optional source research lives in the separate private corpus, with no
+runtime dependency. Added exact historical 0.3.0 data for explicitly pinned voices.
+Refreshed engine locks for Quillgrain 0.1.0rc4; synthetic examples remain standalone.
+
 ## 0.4.2
 
 Owner-feedback candidate: restore conversational observations and rhythm, without obligatory wit; explicitly reject unsolicited calls to action and invented reasons or reader obligations. Announcement demonstration revised; fiction demonstration unchanged.
