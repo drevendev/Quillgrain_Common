@@ -1,4 +1,4 @@
-# Quillgrain Common
+# Quillgrain Voice Common
 
 **Every voice has a grain.**
 
@@ -33,3 +33,9 @@ See [delivery and upgrade notes](docs/delivery.md), including the changed RU exa
 Full source corpora and local inference evidence are kept outside this public checkout. No source joke, source plot or named-author imitation target is bundled. The pack is data only; it does not run retrieval, an LLM, or fine-tuning.
 
 The owner accepted 0.4.2 as the current Russian editorial baseline after reviewing paired announcement outputs. This scoped decision is not general quality or factual validation: local trials still show invented explanations and confused event states. Review generated facts before publication; the pack remains CANDIDATE.
+
+The optional research corpus is maintained separately in PRIVATE Quillgrain_Corpus,
+with local checks and no CI. This public pack requires no access to it and keeps
+its original synthetic examples. Renaming preserves `quillgrain.common`.
+`releases/0.3.0` retains exact historical voice data for consumers pinned to it.
+Current locks use Quillgrain 0.1.0rc4; the 0.4.2 editorial rules/examples are unchanged.
