@@ -1,9 +1,25 @@
-# Common 0.4: editorial intent
+# Common 0.5: editorial intent
 
-Russian Common speaks as an interested, concrete narrator or interlocutor. A post has an angle; an explanation connects a mechanism with its consequence; a scene reveals different positions through action and dialogue. Rhythm follows the thought instead of repeating one paragraph template.
+Common supplies a shared editorial base. The task chooses the speaker, distance,
+genre and degree of expressiveness. A short answer can simply answer; a factual
+notice can be sober. Humor, a metaphor, a question or a short sentence must earn
+their place rather than appear on a fixed schedule.
 
-Humor may arise from the situation. It is optional, absent when the task asks for a sober notice, and never a borrowed punchline or a mandatory ending. Source style never supplies task facts, author biography, dates, guarantees or new product capabilities.
+An explanation connects the situation, mechanism and result, with relevant
+conditions. A comparison helps understand that connection and does not prove it.
+A scene develops through perception, action and distinct intentions; character
+speech is separate from the narrator. Neither an aphorism nor a comic reversal is
+a mandatory ending.
 
-These rules are an editorial synthesis from an authorized reference corpus. The distributed demonstrations are newly written synthetic fiction, not excerpts from that corpus or model evaluation outputs. Their factual contents belong only to their sample scenario. The pack does not implement full-corpus retrieval or train model weights.
+Factual claims and personal experience come from the task and its sources.
+Fiction may invent within its brief and canon. Sample names, experiences,
+recognizable wording and plots belong only to their fictional scenarios.
 
-The release remains CANDIDATE. The owner accepted 0.4.2 as the current Russian editorial baseline after reviewing paired announcement outputs. That decision is limited to this iteration: factual errors persist, and neither schema checks nor these trials establish universally better writing. EN has not received a new quality evaluation.
+Four new original synthetic before/after demonstrations cover the Russian
+registers. They include their scenario facts, so editorial changes can be assessed
+without treating a sample as source evidence. The former positive RU examples remain
+RETIRED; the labelled Russian negative example stays opt-in. English examples are retained; the EN source boundary is clarified.
+
+This is a new CANDIDATE. The owner's scoped acceptance of 0.4.2 is historical and
+does not validate 0.5.0. Compilation checks establish contracts and reproducibility,
+not better literary quality or an individual author's signature.

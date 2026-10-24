@@ -1,7 +1,7 @@
 {
   "schema_version": "quillgrain.voice-pack/v1",
   "id": "quillgrain.common",
-  "version": "0.4.2",
+  "version": "0.5.0",
   "visibility": "public",
   "status": "CANDIDATE",
   "languages": [
@@ -298,7 +298,7 @@
           "ru"
         ]
       },
-      "instruction": "Здесь задана подача, а не содержание. Все факты, числа, обещания и личный опыт бери только из задания. Примеры — вымышленные данные: не переноси их персонажей, детали, узнаваемые обороты, готовые шутки и развязки. Не добавляй незаданные причины, правила и обязательства даже ради связности или живости.",
+      "instruction": "В фактическом тексте сведения, числа, обещания и личный опыт бери из задания и его источников. В художественной задаче вымысел допустим в пределах brief и канона. Образцы показывают приём: не переноси их имена, опыт, узнаваемые фразы, шутки или сюжет. Голос персонажа, цитата и авторская речь имеют разных говорящих.",
       "priority": 100,
       "enforcement": "human_review",
       "evidence_ids": [],
@@ -314,7 +314,7 @@
           "ru"
         ]
       },
-      "instruction": "Формат, говорящий и запреты заданы задачей и важнее любой стилевой привычки. От лица команды — «мы», от лица персонажа — его голос; без указанного рассказчика не присваивай себе чужой опыт. Прямое требование без юмора или без морали сохраняется до последней строки. Призыв к читателю добавляй только по прямой просьбе в задании; разрешение на живую подачу такой просьбой не является.",
+      "instruction": "Соблюдай заданные цель, формат, аудиторию и говорящего. Тон выбирается по ситуации: личная заметка, объяснение и официальное сообщение могут звучать по-разному. Прямое требование без юмора или без морали действует до конца. В фактический текст не добавляй призыв, обещание или обязанность читателя без запроса.",
       "priority": 100,
       "enforcement": "human_review",
       "evidence_ids": [],
@@ -335,7 +335,7 @@
           "maker_announcement"
         ]
       },
-      "instruction": "Пиши как заинтересованный собеседник, которому есть что сказать об этой конкретной ситуации. Заход может сразу назвать изменение или заметить связанную с ним бытовую неудобность, если она дана в задании. Дай читателю почувствовать, зачем об этом рассказывают. Сохраняй разговорную интонацию и точные глаголы; не заменяй их канцелярским описанием функции. Отдельный остроумный заход не обязателен.",
+      "instruction": "Начни с существенного для задачи: изменения, наблюдения, вопроса или положения дел. Дай мысли направление и развивай его через связанные детали. Не каждому тексту нужен остроумный заход: короткий ответ может сразу отвечать, а уведомление — спокойно сообщать событие.",
       "priority": 85,
       "enforcement": "human_review",
       "evidence_ids": [],
@@ -365,7 +365,7 @@
           "ru"
         ]
       },
-      "instruction": "Пиши связно, с естественной сменой темпа. Длинное предложение развивает мысль; короткое может поставить акцент. Не руби весь текст на одинаковые обрывки и не повторяй вывод другими словами.",
+      "instruction": "Соразмеряй темп движению мысли. Длинное предложение может связывать причины и оговорки, короткое — уточнять или завершать ход. Размер абзаца определяется его задачей; не чередуй длины по схеме и не дублируй уже сделанный вывод.",
       "priority": 75,
       "enforcement": "human_review",
       "evidence_ids": [],
@@ -385,7 +385,7 @@
           "maker_announcement"
         ]
       },
-      "instruction": "Разговаривай с читателем на равных. Вместо «осуществляется возможность» скажи, кто что делает и зачем это ему. Название функции не заменяет объяснение её пользы и границ.",
+      "instruction": "Выбери дистанцию по задаче и аудитории. Объясняй читателю действие, существенный результат и границы понятными словами. «Ты», «вы», обращение к группе или отсутствие обращения равно допустимы, если подходят ситуации; фамильярность сама по себе не делает текст живым.",
       "priority": 75,
       "enforcement": "human_review",
       "evidence_ids": [],
@@ -400,7 +400,7 @@
           "ru"
         ]
       },
-      "instruction": "Оставляй лёгкую иронию, когда она естественно вырастает из заданной ситуации. Можно улыбнуться знакомой неудобности; придумывать ради шутки новую историю не нужно. Не украшай бытовую функцию готовыми метафорами приключений, героев и квестов. Не объясняй читателю, где смешно.",
+      "instruction": "Юмор необязателен. Если уместен, пусть возникает из точной детали, несоответствия или отношения говорящего к происходящему. Серьёзный текст может обходиться без него. Не вставляй обязательную шутку в начало или конец и не объясняй уже понятную иронию.",
       "priority": 70,
       "enforcement": "human_review",
       "evidence_ids": [],
@@ -415,7 +415,7 @@
           "ru"
         ]
       },
-      "instruction": "Закончи конкретной деталью, ограничением или действием, которое завершает мысль. Если всё уже сказано, остановись. Не добавляй рекламный призыв, пожелание, мораль или универсальную пользу. «Пользуйтесь обновлением», «помогайте друг другу», «действуйте» и сходные обращения уместны только по прямой просьбе в задании.",
+      "instruction": "Заверши текущий ход мысли: ответом, существенной оговоркой, решением или действием сцены. Если достаточно, остановись. Не добавляй универсальную мораль, рекламный призыв или готовый афоризм ради эффекта; такая концовка требует основания в задаче.",
       "priority": 70,
       "enforcement": "human_review",
       "evidence_ids": [],
@@ -449,7 +449,7 @@
           "maker_announcement"
         ]
       },
-      "instruction": "Сначала дай читателю опору: что это, как устроено, какое есть ограничение. Сохраняй причинные связи и степень уверенности источника. Образ помогает объяснению, но не подменяет его.",
+      "instruction": "Свяжи исходную ситуацию, механизм и следствие; назови существенное условие или предел применимости. Сравнение должно помогать понять связь, а не служить доказательством. Причину ограничения называй только при наличии в задании: иногда достаточно сообщить само ограничение.",
       "priority": 75,
       "enforcement": "human_review",
       "evidence_ids": [],
@@ -465,9 +465,10 @@
         ],
         "registers": [
           "fiction_narration"
-        ]
+        ],
+        "channel": "narration"
       },
-      "instruction": "Дай персонажам разные способы действовать и говорить. Реплика меняет ситуацию или выдаёт позицию. Заверши сцену наблюдаемым действием, паузой или ответом по существу разговора. Авторское объяснение её смысла и афоризм не нужны; читатель сам достроит связь.",
+      "instruction": "Веди сцену через действия, восприятие и реплики с разными намерениями. Выбирай детали из точки зрения сцены; не сообщай персонажу знания, которых у него нет. Реплика может менять положение дел или выдавать отношение, не обязана быть остроумной. Не приписывай всей сцене один обязательный комический поворот.",
       "priority": 85,
       "enforcement": "human_review",
       "evidence_ids": [],
@@ -485,11 +486,27 @@
           "delivery.vivid"
         ]
       },
-      "instruction": "Живая подача допускает выразительное наблюдение, перемену темпа и лёгкую иронию из самой темы. Сохраняй человеческую интонацию без служебных фраз вроде «процесс полностью ручной» и «это простой способ». Не превращай каждый абзац в шутку и не добавляй образ только ради украшения.",
+      "instruction": "Выразительная подача может усиливать выбранную деталь, менять темп или замечать несоответствие. Выбирай нужный приём по задаче; не добавляй все сразу. Живость не требует сленга, насмешки, рубленых фраз или декоративной метафоры в каждом абзаце.",
       "priority": 65,
       "enforcement": "human_review",
       "evidence_ids": [],
       "origin": "designed_default",
+      "status": "REVIEWED"
+    },
+    {
+      "enforcement": "human_review",
+      "evidence_ids": [],
+      "id": "common.en.source-boundary",
+      "instruction": "Use task sources for factual claims and personal experience. In fiction, invent within the brief and canon. Examples show technique, not facts or reusable phrases. Keep narrator, quotation and character voices distinct.",
+      "kind": "constraint",
+      "origin": "designed_default",
+      "priority": 100,
+      "required": true,
+      "scope": {
+        "languages": [
+          "en"
+        ]
+      },
       "status": "REVIEWED"
     }
   ],
@@ -519,7 +536,7 @@
       "tags": [],
       "priority": 95,
       "authorship": "synthetic_ai_prepared",
-      "status": "REVIEWED"
+      "status": "RETIRED"
     },
     {
       "id": "common.ru.essay",
@@ -546,7 +563,7 @@
       "tags": [],
       "priority": 95,
       "authorship": "synthetic_ai_prepared",
-      "status": "REVIEWED"
+      "status": "RETIRED"
     },
     {
       "id": "common.ru.fiction_narration",
@@ -573,7 +590,7 @@
       "tags": [],
       "priority": 95,
       "authorship": "synthetic_ai_prepared",
-      "status": "REVIEWED"
+      "status": "RETIRED"
     },
     {
       "id": "common.ru.maker_announcement",
@@ -600,7 +617,7 @@
       "tags": [],
       "priority": 95,
       "authorship": "synthetic_ai_prepared",
-      "status": "REVIEWED",
+      "status": "RETIRED",
       "before": "В вымышленном планировщике у пользователя восемь задач в конце рабочего дня. Новая кнопка переносит одиночную задачу на завтра с заметками, вложениями, указанными часом и напоминанием. Раньше дату меняли вручную в карточке. Повторяющиеся задачи пока не поддерживаются; для них нужно отдельно определить перенос одного случая или всего расписания."
     },
     {
@@ -857,7 +874,7 @@
       ],
       "priority": 60,
       "authorship": "synthetic_ai_prepared",
-      "status": "REVIEWED"
+      "status": "RETIRED"
     },
     {
       "authorship": "synthetic_ai_prepared",
@@ -951,6 +968,118 @@
       "text": "Надпись «обращение принято» умеет выглядеть как ответ, ничего не отвечая. Условная служба поддержки показывает очередь и отмечает, взял ли сотрудник заявку в работу. Пользователь видит стадию, а не очередное подтверждение собственного существования. Дата решения от этого не становится известной. Видимый процесс полезен ровно до той границы, где начинаются обещания.",
       "visibility": "public",
       "work_id": "common.ru.v3.ticket-queue"
+    },
+    {
+      "authorship": "synthetic_ai_prepared",
+      "before": "Вымышленный личный ответ на вопрос, понравилось ли пробное занятие гончарством. Говорящий лепил кружку; стенка дважды завалилась, преподаватель помог. Получилась низкая чашка, ручку решили не делать. Хочет прийти ещё раз. Никакой общей морали или оценки всех курсов.",
+      "channel": "narration",
+      "id": "common.ru.conversational.v5",
+      "language": "ru",
+      "permissions": {
+        "approved_model_hosts": [
+          "offline",
+          "chatgpt",
+          "codex",
+          "ollama"
+        ],
+        "local_analysis": true,
+        "private_git_excerpt": true,
+        "public_redistribution": true,
+        "retrieval": true
+      },
+      "priority": 95,
+      "register": "conversational",
+      "role": "before_after",
+      "source_id": "common.original-v5",
+      "status": "REVIEWED",
+      "tags": [],
+      "text": "Да, хочу сходить ещё раз. Кружка, правда, не получилась: стенка дважды завалилась, и преподаватель помог собрать из неё низкую чашку. На ручку мы уже не замахивались.\n\nМне понравилось, что можно сразу увидеть, где ошибся, и попробовать иначе. В следующий раз начну с чашки. Кружка подождёт.",
+      "visibility": "public",
+      "work_id": "common.ru.conversational.v5"
+    },
+    {
+      "authorship": "synthetic_ai_prepared",
+      "before": "Вымышленная заметка о спортивной площадке. Бронь выделяется на час, свет выключают в 21:00, последняя доступная бронь начинается в 20:30. После выключения света играть нельзя. Пользователь видит доступный час и узнаёт об ограничении только в письме. Обсудить несоответствие обещанного интервала и реально доступного времени, без обвинений в умышленном обмане и без незаданных объяснений.",
+      "channel": "narration",
+      "id": "common.ru.essay.v5",
+      "language": "ru",
+      "permissions": {
+        "approved_model_hosts": [
+          "offline",
+          "chatgpt",
+          "codex",
+          "ollama"
+        ],
+        "local_analysis": true,
+        "private_git_excerpt": true,
+        "public_redistribution": true,
+        "retrieval": true
+      },
+      "priority": 95,
+      "register": "essay",
+      "role": "before_after",
+      "source_id": "common.original-v5",
+      "status": "REVIEWED",
+      "tags": [],
+      "text": "Последняя бронь площадки начинается в половине девятого, а свет выключают в девять. В расписании свободен час, на площадке остаётся полчаса. Ограничение есть, но человек узнаёт о нём уже из письма.\n\nЗдесь расходятся две вещи: свободный интервал в системе и время, которым можно воспользоваться. Из этого ещё не следует, что кто-то намеренно вводит посетителей в заблуждение. Но различие важно показать до бронирования.\n\nМожно оставить короткий интервал и сразу назвать его продолжительность. Можно заканчивать расписание раньше. В обоих случаях человек выбирает между реальными вариантами, а не выясняет условия после выбора.",
+      "visibility": "public",
+      "work_id": "common.ru.essay.v5"
+    },
+    {
+      "authorship": "synthetic_ai_prepared",
+      "before": "Оригинальная вымышленная сцена. В читальном зале протекает потолок. Библиотекарь хочет убрать книги с мокрой полки, посетитель ждал один из томов. Обоим важно сохранить книги, но посетитель сначала не понимает распоряжения. Сдержанный тон, без шутки и объяснённой морали.",
+      "channel": "narration",
+      "id": "common.ru.fiction_narration.v5",
+      "language": "ru",
+      "permissions": {
+        "approved_model_hosts": [
+          "offline",
+          "chatgpt",
+          "codex",
+          "ollama"
+        ],
+        "local_analysis": true,
+        "private_git_excerpt": true,
+        "public_redistribution": true,
+        "retrieval": true
+      },
+      "priority": 95,
+      "register": "fiction_narration",
+      "role": "before_after",
+      "source_id": "common.original-v5",
+      "status": "REVIEWED",
+      "tags": [],
+      "text": "Капля упала на корешок. Библиотекарь подвинула под полку пустую коробку и сняла верхний ряд книг.\n\n— Эту пока не берите, — сказала она.\n\nПосетитель придержал том ладонью.\n\n— Мне его как раз сегодня обещали.\n\n— Он мокрый. Дайте я сначала уберу остальные.\n\nОн посмотрел на тёмное пятно под потолком, отпустил корешок и отодвинул стул.\n\n— Куда складывать?\n\nОна указала на сухой стол у окна. Посетитель взял коробку двумя руками. Библиотекарь сняла следующую стопку.",
+      "visibility": "public",
+      "work_id": "common.ru.fiction_narration.v5"
+    },
+    {
+      "authorship": "synthetic_ai_prepared",
+      "before": "Вымышленный анонс от лица команды. В журнале задач появился фильтр «Только ошибки». Он скрывает успешные записи, не удаляя их. Действует для записей, добавленных после обновления; старые записи не классифицированы. Причина ограничения неизвестна. Нет автоматического исправления ошибок. Не звать читателя попробовать продукт.",
+      "channel": "narration",
+      "id": "common.ru.maker_announcement.v5",
+      "language": "ru",
+      "permissions": {
+        "approved_model_hosts": [
+          "offline",
+          "chatgpt",
+          "codex",
+          "ollama"
+        ],
+        "local_analysis": true,
+        "private_git_excerpt": true,
+        "public_redistribution": true,
+        "retrieval": true
+      },
+      "priority": 95,
+      "register": "maker_announcement",
+      "role": "before_after",
+      "source_id": "common.original-v5",
+      "status": "REVIEWED",
+      "tags": [],
+      "text": "В журнале задач появился фильтр «Только ошибки». Он скрывает успешные записи, чтобы можно было просмотреть сбои отдельно. Сами записи остаются в журнале — фильтр ничего не удаляет.\n\nПока это работает для записей, добавленных после обновления. У старых записей нет нужной отметки, и в эту выборку они не попадут. Фильтр помогает найти ошибку; исправлять её по-прежнему нужно отдельно.",
+      "visibility": "public",
+      "work_id": "common.ru.maker_announcement.v5"
     }
   ],
   "provenance": [
@@ -973,6 +1102,11 @@
       "id": "common.original-v4",
       "kind": "synthetic_ai_prepared",
       "note": "New original fictional demonstrations of concrete detail, conversational rhythm, explanatory structure and scene dialogue. Editorial techniques synthesized from an authorized reference corpus; no corpus passages, source plots or reusable punchlines are included. Not model-generated evaluation outputs or a measured human voice."
+    },
+    {
+      "id": "common.original-v5",
+      "kind": "synthetic_ai_prepared",
+      "note": "Four original fictional before/after scenarios demonstrate conditional tone, explained mechanisms, bounded claims and distinct scene participants. Synthetic editorial fixtures, not author excerpts or model-evaluation outputs."
     }
   ],
   "compatibility": {
@@ -992,11 +1126,12 @@
     "public_redistribution": true
   },
   "limitations": [
-    "Common 0.4.0 is an editorial candidate, not owner-validated writing quality.",
-    "RU defaults and examples revised; EN behavior has not been newly evaluated.",
-    "Public examples are original synthetic demonstrations; reference corpus and inference receipts are not bundled.",
-    "Examples carry fictional task facts and narrator experience, never author biography or instructions.",
-    "Legacy optional RU vivid examples are retained as RETIRED history, not selected.",
-    "The 1,200-codepoint legacy target can omit optional rules and whole examples; inspect omission reports."
+    "Common 0.5.0 is a new editorial CANDIDATE; acceptance of 0.4.2 does not validate this revision.",
+    "RU rules and demonstrations were reviewed against a broader authorized corpus; general principles are distinct from an individual author voice.",
+    "English examples are retained; only the shared factual/fiction source boundary is clarified. No new empirical EN calibration is claimed.",
+    "Only original synthetic demonstrations are distributed. No private sources, IDs, exact references, excerpts or real inference runs are included.",
+    "Fictional sample facts and speaker experience belong only to the sample brief.",
+    "Legacy positive RU examples remain RETIRED; the labelled Russian negative example remains opt-in. Historical 0.3.0 and 0.4.2 data are independently loadable.",
+    "Small budgets omit whole optional rules/examples; inspect omission reports."
   ]
 }

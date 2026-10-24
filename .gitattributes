@@ -1,0 +1,2 @@
+# Historical pack snapshots preserve their exact accepted bytes.
+releases/** -text -whitespace

@@ -1,11 +1,27 @@
-# Delivery modes in Common 0.4
+# Delivery and upgrade notes for Common 0.5
 
-RU concrete, conversational delivery is now the default. In 0.4.2, `delivery.vivid` allows conversational observations, varied rhythm and optional situational irony. It does not require a witty opening or decorative metaphor. Unsolicited calls to action and invented reasons or reader obligations are explicitly discouraged; local trials show that factual errors can still occur. A sober task takes precedence. English delivery behavior is retained from 0.3.
+The Russian default is concrete, connected and conditional on the task. Optional
+`delivery.vivid` permits a more expressive observation; it does not require jokes,
+slang or ornamental metaphors. Choose `social.telegram`, `social.x` or
+`social.longform` for destination-specific guidance. Zero emoji remains valid.
 
-The four RU register examples are original synthetic demonstrations and are selected without `examples.common`. The tag remains accepted for existing commands. Former optional RU vivid examples are RETIRED and cannot be selected. A child pack needing a separate example pool must explicitly select that pool using a compatible engine/consumer; merely omitting `examples.common` no longer removes the new RU defaults. Audit selected/omitted examples when upgrading.
+One new synthetic before/after example is eligible by default for each RU
+register, without `examples.common`. The old positive RU examples are RETIRED and never
+selected. English examples and the optional labelled RU negative demonstration
+are retained. `--examples none` reliably disables all examples.
 
-Choose `social.telegram`, `social.x` or `social.longform` for the destination. Emoji remain optional and bounded by the existing preferences. General-reader version placement is unchanged.
+All supplied scenario facts are fictional. The source boundary applies differently
+to a factual announcement and a creative-fiction brief: inventing a scene does not
+authorize inventing product capabilities, biography or historical evidence.
 
-The 1,200-codepoint `patchpitch-legacy` target cannot carry the full voice and examples: inspect whole-rule/example omission reports. Use a sufficiently budgeted compiled context for the evaluated voice. No consumer or game is automatically changed by this data-pack update.
+Version 0.5.0 is an explicit editorial upgrade. Bind the current root for it;
+`releases/0.4.2` and `releases/0.3.0` preserve exact historical voice/lock data.
+Existing consumers stay pinned until explicitly upgraded and re-exported.
 
-The public pack contains original synthetic examples only. Authorized source material informs editorial choices; raw corpus pages, private paths and model trial outputs stay outside this checkout. Examples must never supply product facts, personal memories, copied punchlines or extra instructions to a new task.
+The 1,200-codepoint legacy target cannot carry every optional rule and example.
+Inspect whole-rule/example omission reports. A normal compiled context has a
+larger budget; exports do not install or mutate consumers.
+
+The public pack remains standalone and data only, with original synthetic examples.
+No private source IDs, author passages, source plots or named-author generation
+targets are distributed. Evaluation receipts and reference corpora remain separate.

@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.5.0 — conditional tone and coherent demonstrations
+
+Revisit Russian tone, rhythm, explanation and scene rules after broader reference
+review. A direct answer or sober notice is valid; humor and a comic ending are
+optional. Distinguish factual tasks from creative-fiction briefs, and narrator
+speech from quotations and character voices. Four new original synthetic
+before/after scenarios replace the former default RU examples, retained as RETIRED.
+English examples stay unchanged; clarify their source boundary. Preserve exact
+0.4.2 data alongside 0.3.0 and pin public CI to engine 0.1.0rc4. This is a new
+CANDIDATE, without inherited literary acceptance or automatic consumer upgrades.
+
 ## Repository rename and corpus migration — 2026-10-23
 
 Renamed to Quillgrain_Voice_Common; quillgrain.common and 0.4.2 voice data are
