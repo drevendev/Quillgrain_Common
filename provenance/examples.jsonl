@@ -14,3 +14,7 @@
 {"id":"common.ru.v3.weather-snapshot","source_id":"common.original-v3","authorship":"synthetic_ai_prepared","rights":"MIT original synthetic fixture","status":"RETIRED"}
 {"id":"common.ru.v3.archive-search","source_id":"common.original-v3","authorship":"synthetic_ai_prepared","rights":"MIT original synthetic fixture","status":"RETIRED"}
 {"id":"common.ru.v3.ticket-queue","source_id":"common.original-v3","authorship":"synthetic_ai_prepared","rights":"MIT original synthetic fixture","status":"RETIRED"}
+{"id":"common.ru.conversational.v5","source_id":"common.original-v5","authorship":"synthetic_ai_prepared","rights":"MIT original synthetic fixture","status":"REVIEWED","scenario_is_fictional":true}
+{"id":"common.ru.essay.v5","source_id":"common.original-v5","authorship":"synthetic_ai_prepared","rights":"MIT original synthetic fixture","status":"REVIEWED","scenario_is_fictional":true}
+{"id":"common.ru.fiction_narration.v5","source_id":"common.original-v5","authorship":"synthetic_ai_prepared","rights":"MIT original synthetic fixture","status":"REVIEWED","scenario_is_fictional":true}
+{"id":"common.ru.maker_announcement.v5","source_id":"common.original-v5","authorship":"synthetic_ai_prepared","rights":"MIT original synthetic fixture","status":"REVIEWED","scenario_is_fictional":true}
